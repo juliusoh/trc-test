@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  height: 100vh;
+  background: url('./assets/bg-pattern.svg') no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 40px;
+  background-color: #71F09F;
+  margin: 0 auto;
+}
+
+.cards {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; */
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  width: 22%;
+  height: 400px;
+  position: relative;
+  transition: all .6s linear;
+}
+
+.opacity {
+  opacity: 0.2;
+}
+
+#icon-1, #icon-2, #icon-3 {
+  transition: all 1s ease;
+}
+
+/* Classes that are added in JS */
+/* Card 1 */
+.card-expand-1 {
+  width: 90%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  margin-left: 80px;
+}
+
+.card-expand-3 {
+  width: 90%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  margin-left: 80px;
+}
+
+/* Card 2 */
+.card-content-right {
+  display: flex;
+}
+.none {
+  display: none;
+}
+.visibility-none {
+  visibility: hidden;
+  max-height: 0;
+}
+.card-flex {
+  display: flex;
+}
+.card-2-content {
+  display: block;
+}
+.card-expand-2 {
+  width: 90%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  margin-left: 80px;
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 4fr;
+}
+
+.border {
+  border-left: 1px solid lightgrey;
+  margin-left: 45px;
+  margin-right: 53px;
+}
+
+/* .card-2 {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* icon img */
+
+.icon {
+  height: 45px;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+.card-title {
+  margin-top: 20px;
+}
+
+.status {
+  position: absolute;
+  bottom: 35%;
+
+}
+
+.status-red {
+  position: absolute;
+  bottom: 27%;
+  width: 200px;
+  line-height: 1.2;
+}
+
+.status-red span {
+  font-size: 14px;
+}
+
+.time-left {
+  position: absolute;
+  bottom: 5%;
+}
+
+.status-text {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.dot-yellow {
+  height: 20px;
+  width: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.dot-red {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+.time-left-text {
+  display: flex;
+}
+
+.time-left-text img {
+  margin-right: 5px;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+/* need to add card flex width from 22% to 100% */
+
