@@ -43,11 +43,11 @@ body {
   width: 22%;
   height: 400px;
   position: relative;
-  transition: all .6s linear;
+  transition: all .5s linear;
 }
 
 .opacity {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 #icon-1, #icon-2, #icon-3 {
